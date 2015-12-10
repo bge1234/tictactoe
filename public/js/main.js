@@ -58,9 +58,9 @@ function setClas(id, c) {
 
 function checkWin() {
   if($(".xrow0").length === 3 || $(".xrow1").length === 3 || $(".xrow2").length === 3 || $(".xcol0").length === 3 || $(".xcol1").length === 3 || $(".xcol2").length === 3 || $(".xdiag0").length === 3 || $(".xdiag1").length === 3)
-    alert("X wins!");
+    alert($("#playerX").val() + " wins!");
   else if($(".orow0").length === 3 || $(".orow1").length === 3 || $(".orow2").length === 3 || $(".ocol0").length === 3 || $(".ocol1").length === 3 || $(".ocol2").length === 3 || $(".odiag0").length === 3 || $(".odiag1").length === 3)
-    alert("O wins!");
+    alert($("#playerO").val() + " wins!");
 }
 
 function drawnGame() {
