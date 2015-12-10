@@ -51,17 +51,23 @@ function setClas(id, c) {
   else if(id[6] === '8')
     clas = "xo " + c + "row2 " + c + "col2 " + c + "diag0";
 
-  console.log(clas);
-
   return clas;
-}
+};
 
 function checkWin() {
-  if($(".xrow0").length === 3 || $(".xrow1").length === 3 || $(".xrow2").length === 3 || $(".xcol0").length === 3 || $(".xcol1").length === 3 || $(".xcol2").length === 3 || $(".xdiag0").length === 3 || $(".xdiag1").length === 3)
-    alert($("#playerX").val() + " wins!");
-  else if($(".orow0").length === 3 || $(".orow1").length === 3 || $(".orow2").length === 3 || $(".ocol0").length === 3 || $(".ocol1").length === 3 || $(".ocol2").length === 3 || $(".odiag0").length === 3 || $(".odiag1").length === 3)
-    alert($("#playerO").val() + " wins!");
-}
+  if($(".xrow0").length === 3 || $(".xrow1").length === 3 || $(".xrow2").length === 3 || $(".xcol0").length === 3 || $(".xcol1").length === 3 || $(".xcol2").length === 3 || $(".xdiag0").length === 3 || $(".xdiag1").length === 3) {
+    if($("#playerX").val().length !== 0)
+      alert($("#playerX").val() + " wins!");
+    else
+      alert("X wins!");
+  }
+  else if($(".orow0").length === 3 || $(".orow1").length === 3 || $(".orow2").length === 3 || $(".ocol0").length === 3 || $(".ocol1").length === 3 || $(".ocol2").length === 3 || $(".odiag0").length === 3 || $(".odiag1").length === 3) {
+    if($("#playerO").val().length !== 0)
+      alert($("#playerO").val() + " wins!");
+    else
+      alert("O wins!");
+  }
+};
 
 function drawnGame() {
   alert("The game was a draw!");
