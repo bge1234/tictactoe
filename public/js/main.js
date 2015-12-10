@@ -60,12 +60,14 @@ function checkWin() {
       alert($("#playerX").val() + " wins!");
     else
       alert("X wins!");
+    $(".xo").remove();
   }
   else if($(".orow0").length === 3 || $(".orow1").length === 3 || $(".orow2").length === 3 || $(".ocol0").length === 3 || $(".ocol1").length === 3 || $(".ocol2").length === 3 || $(".odiag0").length === 3 || $(".odiag1").length === 3) {
     if($("#playerO").val().length !== 0)
       alert($("#playerO").val() + " wins!");
     else
       alert("O wins!");
+    $(".xo").remove();
   }
 };
 
