@@ -1,2 +1,4 @@
 - Change IDs to be only numbers, not strings of "square" + number.
 - Give players option to switch between playing human and playing computer.
+- Make images smaller to see if it loads better on later turns.
+- Announce each player's turn during the game.
