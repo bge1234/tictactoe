@@ -1,0 +1,3 @@
+- Tic-tac-toe game.
+- Deployed app: https://tictactoe-benebel.firebaseapp.com
+- To run locally: '''open index.html'''
